@@ -1,0 +1,6 @@
+# ignore files everywhere
+
+#ignore folders everywhere
+node_modules
+
+#ignore files everywhere

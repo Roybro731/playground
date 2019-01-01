@@ -1,0 +1,21 @@
+.background {
+    background-image: url("../assets/workspace.jpg");
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  transform: translate(-50%, -50%);
+}
+
+.btn-centered {
+    position: fixed;
+    left: 50%;
+    top: 130px;
+    transform: translate(-50%, -50%);
+}
