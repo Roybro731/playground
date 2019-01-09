@@ -1,17 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="background" >
-  <button (click)="signUp()">Not Signed?</button>
-  <form class="centered">
+  <app-registration-form></app-registration-form>
+  
+  <form #form="ngForm" class="centered">
     <div class="form-group">
-      <input type="text" class="form-control" id="userName" placeholder="Enter user name" [(ngModel)]="logInDetails">
+      <input #name="ngModel" required type="text" class="form-control" [class.has-error]="name.touched && name.invalid" name="userName" placeholder="Enter user name" [(ngModel)]="userName">
     </div>
     <div class="form-group">
-      <input type="password" class="form-control" id="password" placeholder="Password">
+      <input #passwordField="ngModel" required type="password" class="form-control" name="password" placeholder="Enter Password" [(ngModel)]="password">
     </div>
-    <button type="submit" class="btn btn-primary btn-centered">Log In</button>
+    <button [disabled]="form.invalid" type="submit" class="btn btn-primary btn-centered">Log In</button>  
   </form>
+  
 </div>
-
-{{form.pristine}}
 
 <router-outlet></router-outlet>

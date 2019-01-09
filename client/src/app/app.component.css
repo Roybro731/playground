@@ -16,6 +16,10 @@
 .btn-centered {
     position: fixed;
     left: 50%;
-    top: 130px;
+    top: 120%;
     transform: translate(-50%, -50%);
+}
+
+.has-error{
+    background-color: pink
 }
