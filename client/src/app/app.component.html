@@ -1,17 +1,7 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div class="background" >
-  <app-registration-form></app-registration-form>
-  
-  <form #form="ngForm" class="centered">
-    <div class="form-group">
-      <input #name="ngModel" required type="text" class="form-control" [class.has-error]="name.touched && name.invalid" name="userName" placeholder="Enter user name" [(ngModel)]="userName">
-    </div>
-    <div class="form-group">
-      <input #passwordField="ngModel" required type="password" class="form-control" name="password" placeholder="Enter Password" [(ngModel)]="password">
-    </div>
-    <button [disabled]="form.invalid" type="submit" class="btn btn-primary btn-centered">Log In</button>  
-  </form>
-  
-</div>
+<nav class="navbar navbar-light bg-light header flex rows">
+  <div class="navbar size-2">ROY'S PLAYGROUND</div>
+  <button class="btn btn-primary" (click)="login()">LOGIN</button>
+</nav>
 
-<router-outlet></router-outlet>
+<router-outlet>
+</router-outlet>

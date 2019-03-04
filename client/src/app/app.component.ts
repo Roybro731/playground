@@ -6,13 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public userName: string;
-  public password: string;
-  
   constructor(){}
 
-  public signUp() {
-    console.log("sign up");
+  public login() {
+    console.log('clicked on login!');
   }
 
 }

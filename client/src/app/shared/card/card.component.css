@@ -1,0 +1,38 @@
+.card {
+    padding: 4em;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.15);
+    border-radius: 0.6rem;
+    text-align: center;
+    width: 240px;
+    height: 240px;
+    justify-content: center;
+}
+
+.card-header {
+    width: 220px;
+    position: absolute;
+    top: 5%;
+    left: 10px;
+}
+
+.card-avatar{ 
+    overflow: hidden;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: -5.665px 9.429px 35px 0px rgba(0,0,0,0.5);
+    top: 20%;
+    left: -10%;
+}
+
+.avatar-image {
+    position: relative;
+    top: 10%;
+}
+
+.avatar-description {
+    position: absolute;
+    top: 30%;
+    text-align: left;
+}
