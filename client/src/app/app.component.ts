@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public logInDetails = {};
-  
-  public signUp() {
-    console.log("sign up");
+  constructor(){}
+
+  public login() {
+    console.log('clicked on login!');
   }
 
 }

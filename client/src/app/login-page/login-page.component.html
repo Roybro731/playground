@@ -1,0 +1,36 @@
+<div class="header">
+    <img src="../../assets/workspace.jpg" class="header-image">   
+</div>
+
+<section>
+  <h3 class="sub-header">TECHNOLOGIES</h3>    
+</section>
+
+<div class="flex rows space-evenly">
+  <ng-container *ngFor="let card of cardsContent">
+      <app-card class=".size-1" 
+                [header]="card.header" 
+                [description]="card.description" 
+                [logo]="card.logo">
+      </app-card>
+  </ng-container>
+</div>
+
+<div class="bottom">© 2019.  All rights reserved.</div>
+
+<!--Template Forms-->
+<!-- <div class="background" >
+  <app-registration-form></app-registration-form>
+  
+  <form #form="ngForm" class="centered" (submit)="login()">
+    <div class="form-group">
+        <input #name="ngModel" required type="text" class="form-control" [class.has-error]="name.touched && name.invalid" name="userName" placeholder="Enter user name" [(ngModel)]="userName">   
+    </div>
+    <div class="form-group">
+      <input #passwordField="ngModel" required type="password" class="form-control" name="password" placeholder="Enter Password" [(ngModel)]="password">
+    </div>
+    <button [disabled]="form.invalid" type="submit" class="btn btn-primary btn-centered">Log In</button>  
+  </form>
+  
+</div>
+<router-outlet></router-outlet> -->

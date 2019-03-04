@@ -1,0 +1,49 @@
+.header{
+    width: 100%;
+}
+
+.header-image {
+    top: 0;
+    left:0;
+    width: 100%;
+}
+
+.sub-header{
+    font-family: "Poppins";
+    color: #4e66f8;
+    text-align: center;
+    margin: 50px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+
+.bottom {
+    width: 100%;
+    background-color: rgb(153, 149, 149);
+    text-align: center;
+    margin-top: 2em;
+    padding: 10px;
+}
+
+
+
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  transform: translate(-50%, -50%);
+}
+
+.btn-centered {
+    position: fixed;
+    left: 50%;
+    top: 120%;
+    transform: translate(-50%, -50%);
+}
+
+.has-error{
+    background-color: pink
+}

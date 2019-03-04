@@ -1,4 +1,5 @@
 # ignore files everywhere
+TODO.txt
 
 #ignore folders everywhere
 node_modules
